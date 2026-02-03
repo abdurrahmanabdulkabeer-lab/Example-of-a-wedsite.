@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Masjid Ibadulrahman — Kwalakota, Minna</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Masjid Ibadulrahman, Kwalakota Minna — Tafsir, Books, Islamiyya" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Masjid Ibadulrahman</h1>
+        <p class="tag">Kwalakota, Minna — Niger State, Nigeria</p>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#books">Books</a>
+        <a href="#islamiyya">Islamiyya</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h2>Welcome to Masjid Ibadulrahman</h2>
+        <p>Join our Tafsir sessions, get Islamic books, and enroll in Islamiyya classes.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>
+        Masjid Ibadulrahman is located in Kwalakota, Minna, Niger State. We serve the local community with spiritual guidance,
+        Quranic tafsir sessions, an Islamic library of books, and Islamiyya education for children and adults.
+      </p>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Tafsir</h3>
+            <p>Weekly tafsir classes and study circles led by our local scholars. Open to everyone.</p>
+          </article>
+
+          <article class="card">
+            <h3>Books & Library</h3>
+            <p>Islamic books available for study and purchase — from basics to advanced texts in Arabic and English.</p>
+          </article>
+
+          <article class="card">
+            <h3>Islamiyya</h3>
+            <p>Islamiyya classes for children and adults: Quran reading, tajweed and basic Islamic knowledge.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="section container">
+      <h2>Featured Books</h2>
+      <p>We stock Tafsir, Hadith collections, Seerah, and beginner books for kids. Visit the masjid to browse the collection.</p>
+      <!-- You can add a small gallery of book cover images here -->
+    </section>
+
+    <section id="islamiyya" class="section alt">
+      <div class="container">
+        <h2>Islamiyya Program</h2>
+        <p>
+          Structured classes for children and adults focusing on Quran reading, memorization, tajweed, and Islamic manners.
+          Contact us to enroll or volunteer as a teacher.
+        </p>
+      </div>
+    </section>
+
+    <section id="schedule" class="section container">
+      <h2>Weekly Schedule (Sample)</h2>
+      <ul class="schedule">
+        <li><strong>Friday:</strong> Jumu'ah — 1st Khutbah 1:00pm, 2nd Khutbah 1:20pm</li>
+        <li><strong>Tues/Thurs:</strong> Tafsir — 6:00pm</li>
+        <li><strong>Daily:</strong> Islamiyya classes for kids — 4:00pm</li>
+      </ul>
+      <p class="small">(Replace with your actual local times.)</p>
+    </section>
+
+    <section id="gallery" class="section container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img alt="Mosque view" src="https://source.unsplash.com/800x600/?mosque" />
+        <img alt="Prayer hall" src="https://source.unsplash.com/800x600/?masjid" />
+        <img alt="Quran study" src="https://source.unsplash.com/800x600/?quran" />
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact & Location</h2>
+          <p>Masjid Ibadulrahman<br/>Kwalakota, Minna, Niger State, Nigeria</p>
+          <p>Please add phone number and e-mail below.</p>
+          <p><strong>Phone:</strong> <span id="phone-placeholder">+234 - add phone</span></p>
+          <p><strong>Email:</strong> <span id="email-placeholder">info@yourmasjid.example</span></p>
+          <p>
+            Map: <a href="https://www.google.com/maps/search/Kwalakota+Minna" target="_blank" rel="noopener">Open in Google Maps</a>
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <h3>Send us a message</h3>
+          <label>
+            Name
+            <input type="text" name="name" id="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" id="email" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" id="message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit" class="btn">Send</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Masjid Ibadulrahman — Kwalakota, Minna • All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
